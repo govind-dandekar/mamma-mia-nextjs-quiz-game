@@ -14,7 +14,6 @@ export function generateRandomNumberArray(): number[]{
     }
   }
 
-	console.log(randomNumberArray);
   return randomNumberArray;
 }
 
