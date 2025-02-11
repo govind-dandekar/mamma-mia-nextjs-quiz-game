@@ -28,10 +28,10 @@ function SelectLevelPage() {
   return (
     <>
       <Image
-        src="/bluey-bingo-sitting.png"
-        width={128}
-        height={200}
-        alt="bluey and bingo sitting"
+        src="/mamma-mia-singing.svg"
+        width={200}
+        height={400}
+        alt="mamma mia logo"
       />
       {/* level selection container */}
       <div className="text-6xl text-center mt-8">

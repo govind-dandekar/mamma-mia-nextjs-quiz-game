@@ -4,10 +4,10 @@ function Instructions() {
   return (
     <>
       <Image
-        src="/bluey-family-car.png"
-        width={160}
-        height={120}
-        alt="bluey family with play car"
+        src="/mamma-mia-singing.svg"
+        width={200}
+        height={400}
+        alt="mamma mia logo"
       />
       <div className="text-4xl mt-8">
         <p>Instructions:</p>

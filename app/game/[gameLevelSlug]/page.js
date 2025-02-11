@@ -6,8 +6,7 @@ import { useEffect, useState, useActionState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { getQuestionsAnthropic } from "@/lib/actions";
-// import { getQuestionsDummy } from "@/lib/actions";
+import { getQuestionsDummy } from "@/lib/actions";
 import Instructions from "../../../components/game/instructions";
 import AnswerGrid from "../../../components/game/answer-grid";
 import SubmitButton from "@/components/ui/submit-button";
@@ -28,7 +27,7 @@ function GamePage({ params }) {
 
   // useActionState to securely retrieve data from server component via server action
   const [quizQuestions, formAction, isPending] = useActionState(
-    getQuestionsAnthropic.bind(null, gameLevelSlug),
+    getQuestionsDummy.bind(null, gameLevelSlug),
     []
   );
 
@@ -72,9 +71,11 @@ function GamePage({ params }) {
   if (gameMode === "loading") {
     return (
       <>
-        <p className="text-4xl mb-12">
-          Claude Is Preparing Your Bluey Quiz Questions!
+        <p className="text-4xl mb-6">Loading your quiz questions!</p>
+        <p className="text-3xl mb-12">
+          The questions are AI generated and might not be 100% accurate
         </p>
+
         <LDRSBouncyAnimationLoader />
       </>
     );
@@ -100,10 +101,10 @@ function GamePage({ params }) {
     return (
       <>
         <Image
-          src="/bluey-bingo-car.png"
-          width={160}
-          height={120}
-          alt="bluey and bingo playing with a toy car"
+          src="/mamma-mia-singing.svg"
+          width={200}
+          height={400}
+          alt="mamma mia logo"
         />
         <p className="text-5xl mt-8">
           Correct Answers: {correctAnswerCounter} out of 10!
