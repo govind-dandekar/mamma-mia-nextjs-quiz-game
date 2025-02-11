@@ -72,8 +72,9 @@ function GamePage({ params }) {
     return (
       <>
         <p className="text-4xl mb-6">Loading your quiz questions!</p>
-        <p className="text-3xl mb-12">
-          Note: questions are AI generated and might not be 100% accurate
+        <p className="text-2xl mb-12">
+          note: questions & answers are AI generated and might not be 100%
+          accurate
         </p>
 
         <LDRSBouncyAnimationLoader />
