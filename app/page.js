@@ -7,8 +7,6 @@ import { redirect } from "next/navigation";
 import SubmitButton from "@/components/ui/submit-button";
 
 function HomePage() {
-  // TODO: Update Home Page
-  // TODO: Update Footer
   return (
     <>
       <Image
