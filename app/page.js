@@ -7,19 +7,19 @@ import { redirect } from "next/navigation";
 import SubmitButton from "@/components/ui/submit-button";
 
 function HomePage() {
+  // TODO: Update Home Page
+  // TODO: Update Footer
   return (
-    // TODO: implement fallback to dummy responses if Claude returns error
-    // TODO: add try-catch to Anthropic API calls
     <>
       <Image
-        src="/bluey-bingo.png"
-        width={128}
-        height={200}
-        alt="bluey and bingo"
+        src="/mamma-mia-singing.svg"
+        width={200}
+        height={400}
+        alt="mamma mia logo"
       />
       <div className="text-6xl space-y-4 text-nowrap mt-8">
         <p>Welcome To...</p>
-        <p>The Bluey Quiz Game!!!</p>
+        <p className="text-4xl">The Mamma Mia Musical Quiz Game!!!</p>
       </div>
       <SubmitButton onClick={() => redirect("/select-level")}>
         Click Here To Play!
