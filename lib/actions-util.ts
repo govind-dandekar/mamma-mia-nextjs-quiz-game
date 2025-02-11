@@ -13,6 +13,8 @@ export function generateRandomNumberArray(): number[]{
       randomNumberArray.push(rndInt)
     }
   }
+
+	console.log(randomNumberArray);
   return randomNumberArray;
 }
 
