@@ -10,7 +10,7 @@ function CustomFooter() {
         <a href="https://www.claude.ai">Claude</a>
       </p>
       <p>for non-commercial entertainment purposes only</p>
-      <Link href="https://github.com/govind-dandekar/react-nextjs-quiz-game">
+      <Link href="https://github.com/govind-dandekar/mamma-mia-nextjs-quiz-game">
         <FaGithub className="scale-150 mt-1" />
       </Link>
       <Link href="/">
