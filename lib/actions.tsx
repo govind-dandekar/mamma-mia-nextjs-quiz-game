@@ -15,20 +15,20 @@ export async function getQuestionsDummy(level: string): Promise<any[]>{
   })
 
   const randomNumberArray = generateRandomNumberArray();
-  //@ts-ignore
+  //@ts-expect-error
   const answerArray = []
 
   if (level === 'easy'){
     randomNumberArray.forEach((index) => answerArray.push(DUMMY_QUESTIONS_EASY[index]))
-    //@ts-ignore
+    //@ts-expect-error
     return answerArray;
   } else if (level === "medium"){
     randomNumberArray.forEach((index) => answerArray.push(DUMMY_QUESTIONS_MEDIUM[index]))
-    //@ts-ignore
+    //@ts-expect-error
     return answerArray
   } else {
     randomNumberArray.forEach((index) => answerArray.push(DUMMY_QUESTIONS_HARD[index]))
-    //@ts-ignore
+    //@ts-expect-error
     return answerArray
   }
 }

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 function CorrectVSIncorrectAlert({ answerSubmitted, selectedAnswer }) {
   return (
     <div
